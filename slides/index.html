@@ -13,18 +13,21 @@
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/monokai.css">
 		<style media="screen">
-			.dim { opacity: 0.5; }
 			#cretaceous span { background-color: rgba(255, 255, 220, 0.7); line-height: 1.45; }
 			#greenhouse span { background-color: rgba(188, 224, 240, 0.7); line-height: 1.45; }
 			#carbon-cycle span { background-color: rgba(200, 220, 200, 0.7);  line-height: 1.45; }
-			#carbon-cycle .blended { color: rgba(200, 220, 200, 0.7); }
 			#industrial-revolution span { background-color: rgba(220, 230, 240, 0.7);  line-height: 1.45; }
-			#industrial-revolution .blended { color: rgba(220, 230, 240, 0.7); }
 			#today span { background-color: rgba(220, 230, 240, 0.8);  line-height: 1.45; }
-			#today .blended { color: rgba(220, 230, 240, 0.8); }
 			#emissions span { background-color: rgba(255, 230, 74, 0.8);  line-height: 1.45; }
-			#emissions .blended { color: rgba(255, 230, 74, 0.8); }
-			#wakanda span { background-color: rgba(200, 220, 240, 0.7);  line-height: 1.45; }
+			#transports span { background-color: rgba(240, 220, 220, 0.7);  line-height: 1.45; }
+			#buildings span { background-color: rgba(250, 220, 160, 0.7);  line-height: 1.45; }
+			#electricity span { background-color: rgba(220, 230, 240, 0.7);  line-height: 1.45; }
+			#manufacturing span { background-color: rgba(250, 230, 240, 0.7);  line-height: 1.45; }
+			#volunteer span { background-color: rgba(255, 170, 95, 0.5);  line-height: 1.45; }
+			#study span { background-color: rgba(215, 215, 200, 0.7);  line-height: 1.45; }
+			#climate-strike span { background-color: rgba(78, 230, 130, 0.85);  line-height: 1.45; }
+			#climate-strike small { color: rgb(78, 230, 130); }
+			#wakanda span { background-color: rgba(200, 180, 180, 0.7);  line-height: 1.45; }
 		</style>
 
 		<!-- Printing and PDF exports -->
@@ -55,7 +58,7 @@
 				</section>
 				<!-- BEFORE HUMANS + GHG -->
 				<section>
-					<section>
+					<section id="time-machine">
 						<p>We need to go back to 70 million years ago, long before humans inhabited this planet</p>
 					</section>
 					<section data-background="../img/cretaceous.jpg" id="cretaceous">
@@ -66,24 +69,21 @@
 					</section>
 					<section data-background="../img/atmosphere.jpg" id="greenhouse">
 						<p><span>One of the reasons for warm climate during that time was the high level of greenhouse gases (GHG)</span> </p>
-						<p class="fragment"><span>A GHG absorbs energy from the sun and emits it back into the atmosphere</span> </p>
 						<p class="fragment"><span>The primary GHGs in Earth's atmosphere are <strong>water vapor, carbon dioxide and methane</strong></span> </p>
 					</section>
 					<section id="greenhouse-explained">
-						<p><small>GHGs absorb energy both from the sun and reflected from the Earth's surface, keeping it within the atmosphere</small> </p>
+						<p><small>Greenhouse gases absorb energy from both the sun and the Earth's surface, and emit it back into the atmosphere</small> </p>
 						<img width="800" src="../img/greenhouse-effect.png" alt="Greenhouse effect">
-						<p class="dim"><small>Image courtesy: <a href="//commons.wikimedia.org/wiki/User:A_loose_necktie" title="User:A loose necktie">A loose necktie</a> - <span class="int-own-work" lang="en">Own work</span>, <a href="https://creativecommons.org/licenses/by-sa/4.0" title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=80356809">Link</a> </small> </p>
 					</section>
 					<section id="carbon-cycle" data-background="../img/forest.jpg">
 						<p><span>For millions of years, trees have sucked carbon dioxide from the atmosphere</span> </p>
 						<p class="fragment"><span>storing carbon in wood while growing, and releasing oxygen in the air</span>	</p>
 						<p class="fragment"><span>then dying and going underground to transform, becoming <strong>coal</strong> and <strong>oil</strong></span> </p>
-						<p><small class="blended">Photo by Sebastian Unrau on <a href="https://unsplash.com/photos/sp-p7uuT0tw">Unsplash</a> </small> </p>
 					</section>
 				</section>
 				<!-- PROGRESS -->
 				<section>
-					<section>
+					<section id="fast-forward">
 						<p>Fast forward 70 million years, from the last Triceratops and T-Rex</p>
 						<p class="fragment"><strong>to 1750!</strong> </p>
 						<p class="fragment">Our planet had substantially cooled off from the Cretaceous period</p>
@@ -94,16 +94,14 @@
 						<p class="fragment"><span>Europe and the United States went from hand production methods to machines</span>	</p>
 						<p class="fragment"><span>We started using machines powered by steam</span> </p>
 						<p class="fragment"><span>We invented new processes to produce iron</span> </p>
-						<p><small class="blended">Photo by Keith Bremner on <a href="https://unsplash.com/photos/W-j2QUiRnhk">Unsplash</a> </small> </p>
 					</section>
 					<section id="today" data-background="../img/tokyo.jpg">
 						<h4><span>During the following 250 years, until now</span> </h4>
 						<p class="fragment"><span>We've become richer, healthier and longer living</span> </p>
 						<p class="fragment"><span>The population has <a href="https://en.wikipedia.org/wiki/World_population#History">increased</a> from ~1Bn to ~8Bn and moved to the cities</span> </p>
 						<p class="fragment"><span>We need bigger buildings, more food, more cars, more Playstations! 🤩 🏢 🌭 🚗 🎮</span> </p>
-						<p><small class="blended">Photo by Fabrizio Chiagano on <a href="https://unsplash.com/photos/hS17IhMVNIE">Unsplash</a> </small> </p>
 					</section>
-					<section>
+					<section id="fossil-fuels">
 						<p>All of this comes at a price...</p>
 						<p class="fragment">We need more energy, <strong>a lot</strong> of it</p>
 						<p class="fragment">So we use what we have readily available: <br> <strong>coal, gas and oil</strong>, AKA fossil fuels</p>
@@ -116,8 +114,7 @@
 						<p class="fragment"><span>We are taking carbon from undergound, where it has been stored for millions of years</span> </p>
 						<p class="fragment"><span>We burn it with oxygen, releasing carbon dioxide to the atmosphere</span> </p>
 						<p class="fragment"><span>All these GHGs warm the planet, bringing back the clock to the dinosaurs period</span> </p>
-						<p class="fragment"><span>Ice caps will melt, ocean will rise, deserts will expand, and there are now ~8Bn of us on Earth</span> </p>
-						<p><small class="blended">Photo by zhao chen on <a href="https://unsplash.com/photos/2WLrGQJfako">Unsplash</a> </small> </p>
+						<p class="fragment"><span>Ice caps will melt, oceans will rise, deserts will expand, and there are now ~8Bn of us on Earth</span> </p>
 					</section>
 					<section>
 						<h4>How do we stop it?</h4>
@@ -127,7 +124,7 @@
 				</section>
 				<!-- SOLUTIONS -->
 				<section>
-					<section>
+					<section id="breakdown">
 						<h4>So, where do we start?</h4>
 						<p> <strong>Everywhere!</strong> reasons for climate change are evenly spread across all sectors</p>
 						<ul class="fragment">
@@ -137,58 +134,69 @@
 							<li>Transportation: 14% - your family 🚘</li>
 							<li>Buidings: 6% - your 🏠</li>
 						</ul>
-						<p class="fragment">Now the good news! no one is too small to make a difference</p>
+						<p class="fragment">Now the good news: <br>no one is too small to make a difference!</p>
 					</section>
-					<section>
-						<h4>Transportation</h4>
-						<p>Use public transport, walk to school, reduce use of private vehicles to a minimum</p>
-						<p class="fragment">we are producing more electric cars, but we will need 10x more energy, where is it going to come from?</p>
+					<section id="transports" data-background="../img/bus.jpg">
+						<h4><span>Transportation</span></h4>
+						<p><span>Use public transport, walk to school, reduce use of private vehicles to a minimum</span></p>
+						<p class="fragment"><span>we are producing more electric cars, but we will need 10x more energy, where is it going to come from?</span></p>
 					</section>
-					<section>
-						<h4>Buildings and heat</h4>
-						<p>have a shower instead of a bath, use warmer clothes during winter, improve insulation at home, get rid of natural gas for heating systems if you can</p>
-						<p class="fragment">"electrification of heat" is happening, but we will need 10x more energy, where is it going to come from?</p>
+					<section id="buildings" data-background="../img/house.jpg">
+						<h4><span>Buildings and heat</span></h4>
+						<p><span>have a shower instead of a bath, use warmer clothes during winter, improve insulation at home, get rid of natural gas for heating systems if you can</span></p>
+						<p class="fragment"><span>"electrification of heat" is happening, but we will need 10x more energy, where is it going to come from?</span></p>
 					</section>
-					<section>
-						<h4>Electricity is key</h4>
-						<p>We need to use alternatives to fossil fuels: wind, sun, rivers and atoms</p>
-						<p class="fragment">and we need to find better ways to store this energy</p>
+					<section id="electricity" data-background="../img/offshore-wind.jpg">
+						<h4><span>Electricity is key</span></h4>
+						<p><span>We need to use alternatives to fossil fuels: <br> wind, sun, rivers, oceans and nuclear</span></p>
+						<p class="fragment"><span>and we need to find better ways to store this energy</span></p>
 					</section>
-					<section>
-						<h4>Manufaturing</h4>
-						<p>Reduce use of single use plastics wherever you can</p>
-						<p class="fragment"> Thinking before you buy: bottles of water, pasta, toothpaste, shampoo, toys, vegetables wrapped in plastic</p>
+					<section id="manufacturing" data-background="../img/shopping.jpg">
+						<h4><span>Manufaturing (making things)</span></h4>
+						<p><span>Reduce single use plastics wherever you can</span></p>
+						<p class="fragment"><span> Think before you buy! </span></p>
+						<p class="fragment"><span>Kinder eggs, bottles of water, pasta, toothpaste, shampoo, toys, vegetables.</span></p>
+						<p class="fragment"><span>All is wrapped in plastic</span></p>
 					</section>
-					<section>
-						<h4>Agriculture</h4>
-						<p>Try to eat mainly plants, eat less meat, try to avoid beef and dairy</p>
+					<section id="agriculture" data-background="../img/field.jpg">
+						<h4><span>Agriculture (farming)</span></h4>
+						<p><span>Try to eat mainly plants, eat less meat,<br> try to avoid beef and dairy</span></p>
 						<img width="700" src="../img/energy_2018_inline-cattle.svg" alt="Cattle emission">
 					</section>
-					<section>
-						<h4>Join the action!</h4>
-						<p>here just a couple of examples:</p>
-						<p><a href="https://plasticpatrol.co.uk/">Plastic Patrol</a> is the global movement to clean up the planet from plastic </p>
-						<p><a href="https://www.treesforcities.org/">Trees for Cities</a> a UK charity working to improve lives by planting trees </p>
+					<section id="volunteer" data-background="../img/help.jpg">
+						<h4><span>Join the action!</span></h4>
+						<p><span>here just a couple of examples:</span></p>
+						<p><span><a href="https://plasticpatrol.co.uk/">Plastic Patrol</a>: a global movement to clean up the planet from plastic</span> </p>
+						<p><span><a href="https://www.treesforcities.org/">Trees for Cities</a>: a UK charity working to improve lives by planting trees</span> </p>
+					</section>
+					<section id="study" data-background="../img/books.jpg">
+						<h4><span>Ask questions!</span></h4>
+						<p><span>climate change is a complex matter: read, watch videos, investigate, don't trust without thinking</span></p>
+						<p class="fragment"><span>even all the things I just said, are they all true?</span></p>
 					</section>
 				</section>
 				<!-- FUTURE -->
 				<section>
 					<section>
-						<p>I'm sorry, we messed this up. I did.<br> Your parents and grandparents did.</p>
+						<p>I'm sorry about this situation, <br> we messed this up. I did.<br> Your parents and grandparents did.</p>
 						<p class="fragment">And now we need <strong>your help</strong> to fix this mess.</p>
 						<p class="fragment">So back to my initial question:</p>
 						<h3 class="fragment">Why are we all here today?</h3>
 					</section>
-					<section>
+					<section id="raise-voice">
 						<p>We are here because we want our voices heard</p>
-						<p class="fragment">We want all governments on earth to do something for climate change <strong>NOW</strong> </p>
+						<p class="fragment">We want all governments on Earth to do something for climate change <strong>NOW</strong> </p>
 						<p class="fragment">And we need your voices to be heard among everybody else's</p>
 						<p class="fragment">We are here because we raise all our voices together in a <a href="https://twitter.com/search?q=%23climatestrike" target="_blank"><strong>#ClimateStrike</strong></a> </p>
 					</section>
-					<section>
-						<h2>CALL TO ACTION</h2>
+					<section id="climate-strike" data-background="../img/climate_strike.jpg">
+						<h4><span>This is your chance to make your voice heard</span></h4>
+						<p class="fragment"><span>you are part of the movement that empowered all children to tell adults the truth.</span></p>
+						<p class="fragment"><span>You can join the strike <strong>today at 11am</strong> from school</span></p>
+						<p class="fragment"><span>to tell everybody that change is coming, whether we like it or not!</span></p>
+						<p><small>watch <a href="https://www.youtube.com/watch?v=VFkQSGyeCWg" target="_blank">Greta Thunberg speech</a> at UN Climate Change COP24 Conference</small></p>
 					</section>
-					<section>
+					<section id="marvel">
 						<p>You know, I am a big fan of Marvel movies</p>
 						<p class="fragment">and one of my favourite super heroes is Black Panther</p>
 						<p class="fragment">I see him, and the place where he lives, and it gives me hope</p>
@@ -229,6 +237,23 @@
 					<section>
 						<p><small>To prevent the worst effects of climate change, we need to get to zero net greenhouse gas emissions in every sector of the economy within 50 years—and as the IPCC recently found, we need to be on a path to doing it in the next 10 years.</small> </p>
 						<p><small>Source: <a href="https://www.gatesnotes.com/Energy/My-plan-for-fighting-climate-change">Gates Notes</a></small> </p>
+					</section>
+					<section id="credits">
+						<h4>Credits</h4>
+						<p><small>
+							<strong>Greenhouse gases</strong> - Image courtesy: <a href="//commons.wikimedia.org/wiki/User:A_loose_necktie" title="User:A loose necktie">A loose necktie</a> - <span class="int-own-work" lang="en">Own work</span>, <a href="https://creativecommons.org/licenses/by-sa/4.0" title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=80356809">Link</a>
+						  <strong>Forest</strong> - Photo by Sebastian Unrau on <a href="https://unsplash.com/photos/sp-p7uuT0tw">Unsplash</a>
+						  <strong>Steam train</strong> - Photo by Keith Bremner on <a href="https://unsplash.com/photos/W-j2QUiRnhk">Unsplash</a>
+						  <strong>Tokyo 1</strong> - Photo by Fabrizio Chiagano on <a href="https://unsplash.com/photos/hS17IhMVNIE">Unsplash</a>
+						  <strong>Refinery</strong> - Photo by zhao chen on <a href="https://unsplash.com/photos/2WLrGQJfako">Unsplash</a>
+						  <strong>Westminster</strong> - Photo by Aron Van de Pol on <a href="https://unsplash.com/photos/tZDtyUrYrFU">Unsplash</a>
+						  <strong>House</strong> - Photo by Scott Webb on <a href="https://unsplash.com/photos/1ddol8rgUH8">Unsplash</a>
+						  <strong>Wind turbines</strong> - Photo by Nicholas Doherty on <a href="https://unsplash.com/photos/pONBhDyOFoM">Unsplash</a>
+						  <strong>Tokyo 2</strong> - Photo by Jezael Melgoza on <a href="https://unsplash.com/photos/layMbSJ3YOE">Unsplash</a>
+						  <strong>Field</strong> - Photo by Jörg on <a href="https://unsplash.com/photos/HirOEl-PGak">Unsplash</a>
+						  <strong>Bicycles</strong> - Photo by Everton Vila on <a href="https://unsplash.com/photos/AsahNlC0VhQ">Unsplash</a>
+						  <strong>Bookshelves</strong> - Photo by Laëtitia Buscaylet on <a href="https://unsplash.com/photos/IMtEliM53Lc">Unsplash</a>
+						</small></p>
 					</section>
 				</section>
 			</div>
